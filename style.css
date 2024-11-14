@@ -1,4 +1,7 @@
-* {
+/* Global Styles */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,26 +9,49 @@
 
 body {
     font-family: 'Cormorant Garamond', serif;
-    background-color: #1c1c1c; /* Dark gray */
+    background-color: #1c1c1c;
     color: #f1f1f1;
     line-height: 1.6;
 }
 
+/* Common styles for btn class */
+.btn {
+    background-color: #ffd700;
+    color: #1c1c1c;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e0c200;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Header Styles */
 header {
-    background-color: #2a2a2a; /* Darker gray */
+    background-color: #2a2a2a;
     padding: 20px;
     text-align: center;
 }
 
 header .logo h1 {
     font-family: 'Cinzel', serif;
-    color: #ffd700; /* Gold accent */
+    color: #ffd700;
     font-size: 36px;
 }
 
 header .nav ul {
     list-style: none;
     margin-top: 10px;
+    padding: 0;
 }
 
 header .nav ul li {
@@ -39,15 +65,17 @@ header .nav ul li a {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 header .nav ul li a:hover {
     color: #ffd700;
 }
 
+/* Hero Section */
 .hero {
     background: url('elden-ring-hero-bg.jpg') center center/cover no-repeat;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +95,15 @@ header .nav ul li a:hover {
     margin-top: 10px;
 }
 
+.cta-buttons .btn {
+    font-size: 18px;
+    padding: 12px 30px;
+    margin: 10px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+/* Featured Products Section */
 .products {
     padding: 50px 20px;
     text-align: center;
@@ -112,70 +149,6 @@ header .nav ul li a:hover {
 .product-card p {
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-.product-card .btn {
-    background-color: #ffd700;
-    color: #1c1c1c;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-card .btn:hover {
-    background-color: #e0c200;
-}
-
-footer {
-    background-color: #2a2a2a;
-    color: #f1f1f1;
-    text-align: center;
-    padding: 20px;
-}
-/* General body and background */
-body {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #1c1c1c; /* Dark gray */
-    color: #f1f1f1;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #2a2a2a; /* Darker gray */
-    padding: 20px;
-    text-align: center;
-}
-
-header .logo h1 {
-    font-family: 'Cinzel', serif;
-    color: #ffd700; /* Gold accent */
-    font-size: 36px;
-}
-
-header .nav ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-header .nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header .nav ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-header .nav ul li a:hover {
-    color: #ffd700;
 }
 
 /* Authentication Form Styles */
@@ -227,202 +200,7 @@ header .nav ul li a:hover {
     outline: none;
 }
 
-.btn {
-    background-color: #ffd700;
-    color: #1c1c1c;
-    font-size: 16px;
-    padding: 15px 25px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-}
-
-.btn:hover {
-    background-color: #e0c200;
-}
-
-p {
-    text-align: center;
-    color: #f1f1f1;
-}
-
-a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #2a2a2a;
-    color: #f1f1f1;
-    text-align: center;
-    padding: 20px;
-}
-/* General body and background */
-body {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #1c1c1c; /* Dark gray */
-    color: #f1f1f1;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #2a2a2a; /* Darker gray */
-    padding: 20px;
-    text-align: center;
-}
-
-header .logo h1 {
-    font-family: 'Cinzel', serif;
-    color: #ffd700; /* Gold accent */
-    font-size: 36px;
-}
-
-header .nav ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-header .nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header .nav ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-header .nav ul li a:hover {
-    color: #ffd700;
-}
-
-/* Hero Section */
-.hero {
-    background: url('elden-ring-hero-bg.jpg') center center/cover no-repeat;
-    height: 600px; /* Adjusted for the new buttons */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #f1f1f1;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.hero-text h2 {
-    font-size: 48px;
-    font-family: 'Cinzel', serif;
-    color: #ffd700;
-}
-
-.hero-text p {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.cta-buttons {
-    margin-top: 30px;
-}
-
-.cta-buttons .btn {
-    background-color: #ffd700;
-    color: #1c1c1c;
-    font-size: 18px;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-buttons .btn:hover {
-    background-color: #e0c200;
-}
-
-.cta-buttons .btn:focus {
-    outline: none;
-}
-
-/* Featured Products Section */
-.products {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.products h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #ffd700;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.product-card {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 3px solid #ffd700;
-    margin-bottom: 20px;
-}
-
-.product-card h3 {
-    font-size: 24px;
-    color: #ffd700;
-}
-
-.product-card p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.product-card .btn {
-    background-color: #ffd700;
-    color: #1c1c1c;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-card .btn:hover {
-    background-color: #e0c200;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
     background-color: #2a2a2a;
     color: #f1f1f1;
