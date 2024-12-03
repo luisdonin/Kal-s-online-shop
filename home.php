@@ -8,4 +8,4 @@ if (!isset($_SESSION['user'])) {
 ?>
 
 <h1>Bem-vindo, <?php echo $_SESSION['user']; ?>!</h1>
-<a href="logout.php">Logout</a>
+<a href="logout.php">Sair</a>

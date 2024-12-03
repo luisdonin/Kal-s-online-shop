@@ -1,5 +1,5 @@
 <?php
-include '../includes/db.php';
+include 'db.php';
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!-- HTML do formulário de login -->
+
 <form action="" method="POST">
     <label>Email</label>
     <input type="email" name="email" required>
